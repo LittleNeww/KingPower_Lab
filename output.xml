@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230717 21:38:47.320" rpa="false" schemaversion="3">
+<suite id="s1" name="KingPower" source="c:\Users\James\OneDrive\เอกสาร\GitHub\KingPower_Lab\TestCase\KingPower.robot">
+<test id="s1-t1" name="Login failed - Username not found" line="19">
+<kw name="Open Chrome Browser With URL" library="KingPowerKW">
+<arg>${KingPowerURL}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<arg>options=add_experimental_option("detach",True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230717 21:38:47.541" level="INFO">Opening browser 'chrome' to base url 'http://the-internet.herokuapp.com/login'.</msg>
+<msg timestamp="20230717 21:38:47.549" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230717 21:38:47.540" endtime="20230717 21:38:53.927"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>INFO : Execute on : ${Browser} Browser</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230717 21:38:53.927" endtime="20230717 21:38:53.928"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230717 21:38:53.929" endtime="20230717 21:38:54.060"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230717 21:38:54.060" endtime="20230717 21:38:54.061"/>
+</kw>
+<status status="PASS" starttime="20230717 21:38:47.540" endtime="20230717 21:38:54.061"/>
+</kw>
+<kw name="Login King Power Web User Not Found" library="KingPowerKW">
+<kw name="Input Text" library="Selenium2Library">
+<arg>${KingPowerLocatorUser}</arg>
+<arg>${KingPowerUserNotFound}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230717 21:38:54.063" level="INFO">Typing text 'tomholland' into text field '//input[@id='username']'.</msg>
+<status status="PASS" starttime="20230717 21:38:54.062" endtime="20230717 21:38:54.186"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${KingPowerLocatorPass}</arg>
+<arg>${KingPowerPassNotfound}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230717 21:38:54.187" level="INFO">Typing text 'Password!' into text field '//input[@id='password']'.</msg>
+<status status="PASS" starttime="20230717 21:38:54.186" endtime="20230717 21:38:54.271"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${KingPowerLocatorPass}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230717 21:38:54.272" level="INFO">Sending key(s) ('ENTER',) to //input[@id='password'] element.</msg>
+<msg timestamp="20230717 21:38:54.560" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230717 21:38:54.560" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230717 21:38:54.271" endtime="20230717 21:38:55.404"/>
+</kw>
+<status status="PASS" starttime="20230717 21:38:54.061" endtime="20230717 21:38:55.404"/>
+</kw>
+<status status="PASS" starttime="20230717 21:38:47.539" endtime="20230717 21:38:55.405"/>
+</test>
+<status status="PASS" starttime="20230717 21:38:47.324" endtime="20230717 21:38:55.406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="KingPower">KingPower</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

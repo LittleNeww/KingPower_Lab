@@ -15,12 +15,12 @@ Login Success
 Login failed - Password incorrect
     Open Chrome Browser With URL    ${KingPowerURL}
     Login King Power Web User Password Incorrect
-    Wait Until Element Contains   //div[@id='flash']  Your password is invalid!
+    Check Wording Password Invalid
     Capture Page Screenshot
 
 
 Login failed - Username not found
     Open Chrome Browser With URL    ${KingPowerURL}
     Login King Power Web User Not Found 
-    Wait Until Element Contains   //div[@id='flash']   Your password is invalid!
+    Check Wording Password Invalid
     Capture Page Screenshot

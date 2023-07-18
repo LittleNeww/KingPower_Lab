@@ -22,5 +22,5 @@ Login failed - Password incorrect
 Login failed - Username not found
     Open Chrome Browser With URL    ${KingPowerURL}
     Login King Power Web User Not Found 
-    Check Wording Password Invalid
+    Check Wording Username Invalid
     Capture Page Screenshot

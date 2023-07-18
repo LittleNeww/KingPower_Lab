@@ -27,3 +27,9 @@ Login King Power Web User Not Found
 
 Logout King Power Web
     Click Element    ${KingPowerLocatorLogout}
+
+Check Wording Password Invalid
+		Wait Until Element Contains   //div[@id='flash']  Your password is invalid!
+
+Check Wording Username Invalid
+		Wait Until Element Contains   //div[@id='flash']   Your username is invalid!

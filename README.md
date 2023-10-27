@@ -1,2 +1,1 @@
-# KingPower_Lab
-Test edi
+test edit readme file
